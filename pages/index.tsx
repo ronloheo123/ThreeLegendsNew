@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box>this is tinnenha</Box>
+        <Box>this is tinnenha1</Box>
         <Box>this ís truong</Box>
         <Box>this is duy</Box>
       </main>
