@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <Box>this is tin</Box>
         <Box>this ís truong</Box>
-        <Box>this is duy</Box>
+        <Box>this is duy1</Box>
       </main>
     </>
   );
