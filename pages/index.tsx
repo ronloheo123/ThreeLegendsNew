@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Box from "@mui/system/Box";
+import HeaderTin from "@/components/tin";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -15,9 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box>this is tin</Box>
-        <Box>this ís truong</Box>
-        <Box>this is duy</Box>
+        <Box>
+          <HeaderTin></HeaderTin>
+        </Box>
+        <Box></Box>
+        <Box></Box>
       </main>
     </>
   );
