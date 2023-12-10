@@ -1,0 +1,5 @@
+/* global.css */
+
+:root {
+  --New-Background-Gradient: linear-gradient(45deg, #FF5733 0%, #33FF57 100%);
+}
