@@ -1,10 +1,15 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { Roboto } from "next/font/google";
 
 type Props = {};
 //tuy da co ham nhung co defaut nen may cai khac khong thay duoc va xa duoc
 function abc() {}
+interface NoiDung {
+  NoiDungChinh: String;
+  NoiDungPhu: String;
+}
 
 const HeaderTin = () => {
   return (
@@ -25,7 +30,7 @@ const HeaderTin = () => {
         <Box
           sx={{
             backgroundImage: `url('/Tin/hinh3.png')`,
-            width: "880px",
+            width: "900px",
             height: "800px",
             zIndex: 3,
             position: "relative", // Cần thêm position để sử dụng thuộc tính top
@@ -38,11 +43,12 @@ const HeaderTin = () => {
           sx={{
             zIndex: 4,
             position: "relative", // Cần thêm position để sử dụng thuộc tính top
-            top: 350,
+            top: 280,
             color: "white",
+            paddingRight: "80px",
           }}
         >
-          <h1>We focus on ergonomics </h1>
+          <h1 style={{ fontSize: "55px" }}>We focus on ergonomics </h1>
           <p>
             Most calendars are designed for teams. Slate is designed for
             freelancers
@@ -54,7 +60,8 @@ const HeaderTin = () => {
             style={{
               backgroundColor: "white",
               color: "#38A3F1",
-              borderRadius: "20px",
+              borderRadius: "30px",
+              padding: "19px 39px",
             }}
           >
             Try For Free
@@ -67,7 +74,7 @@ const HeaderTin = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",
-          height: "877.5px",
+          height: "950.5px",
           flexShrink: 0,
           position: "absolute", // Định vị tuyệt đối theo header
           top: 0,
@@ -133,7 +140,8 @@ const HeaderTin = () => {
           style={{
             backgroundColor: "white",
             color: "#EF2779",
-            borderRadius: "20px",
+            padding: "19px 39px",
+            borderRadius: "30px",
           }}
         >
           Subscribe
