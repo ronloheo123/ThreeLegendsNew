@@ -1,6 +1,22 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Input } from "@mui/base/Input";
+import { makeStyles } from "@mui/styles";
+import UnstyledInputIntroduction from "./truong1";
+import { Grid } from "@mui/material";
+import Button from "@mui/material/Button";
+
+
+
+const useStyles = makeStyles({
+  input: {
+    borderRadius: "12px",
+    border: "1px solid #000", // Đường viền màu đen
+    backgroundColor: "#fff", // Màu nền trắng
+  },
+  backgroundGradient: {
+    background: "linear-gradient(40deg, #EF2779 0.79%, #7834BE 79.29%)",
+  },
+});
 
 interface NoiDung {
   NoiDungChinh: string;
@@ -13,30 +29,54 @@ const noidung1: NoiDung = {
 };
 const noidung2: NoiDung = {
   NoiDungChinh: "Subscribe to our Newsletter",
-  NoiDungPhu: "Available exclusivery on Figmaland",
+  NoiDungPhu: "Available exclusively on Figmaland",
 };
 
 const MyComponent1 = () => {
+  const classes = useStyles();
+
   return (
-    <>
-      <Box sx={{ bgcolor: "#f0f0f0" }}>
-        <Box sx={{ marginLeft: "632.5px", paddingTop: "80px" }}>
-          {noidung1.NoiDungChinh}
-        </Box>
-        <Box
-          sx={{ marginLeft: "454.5px", fontSize: "46px", marginTop: "7px " }}
-        >
-          {noidung1.NoiDungPhu}
-        </Box>
-        <Box sx={{ marginLeft: "580.5px", marginTop: "69px" }}>
-          {noidung2.NoiDungChinh}
-        </Box>
-        <Box sx={{ marginLeft: "577px", marginTop: "10px" }}>
-          {noidung2.NoiDungPhu}
-        </Box>
-       <Box></Box>
+    <Box
+      sx={{
+        background: "linear-gradient(40deg, #EF2779 0.79%, #7834BE 79.29%)",
+      }}
+    >
+      <Box sx={{ marginLeft: "632.5px", paddingTop: "80px", color: "white" }}>
+        {noidung1.NoiDungChinh}
       </Box>
-    </>
+      <Box
+        sx={{
+          marginLeft: "454.5px",
+          fontSize: "46px",
+          marginTop: "7px ",
+          color: "white",
+        }}
+      >
+        {noidung1.NoiDungPhu}
+      </Box>
+      <Box sx={{ marginLeft: "580.5px", marginTop: "69px", color: "white" }}>
+        {noidung2.NoiDungChinh}
+      </Box>
+      <Box sx={{ marginLeft: "577px", marginTop: "10px", color: "white" }}>
+        {noidung2.NoiDungPhu}
+      </Box>
+      <Box sx={{ marginLeft: "543.5px", marginTop: "30px" }}>
+        <UnstyledInputIntroduction></UnstyledInputIntroduction>
+      </Box>
+      <Box sx={{ marginLeft: "543.5px", marginTop: "24px" ,paddingBottom:"97px"}}>
+        <Button
+          sx={{
+            borderRadius: "39px",
+            width: "305px",
+            height:"40px",
+            background: "var(--Primary, #EF2779)",
+          }}
+          variant="contained"
+        >
+          Subscribe
+        </Button>
+      </Box>
+    </Box>
   );
 };
 
