@@ -3,7 +3,12 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Box from "@mui/system/Box";
-import Pricing, { Item } from "@/components/duy";
+import priceContent from "@/components/TextContent";
+import Items from "@/components/Items";
+import Pricing_page from "@/components/Pricing_page";
+import Contact from "@/components/Contact_page";
+import { Container } from "@mui/material";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +25,10 @@ export default function Home() {
       </Head>
       <main>
         <Box>
-        <Pricing></Pricing>
-        <Item></Item>
+          <Pricing_page></Pricing_page>          
+        </Box>
+        <Box sx={{pt:"100px",}}>
+          <Contact></Contact>_
         </Box>    
       </main>
     </>
