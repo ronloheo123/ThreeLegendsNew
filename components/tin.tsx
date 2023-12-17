@@ -3,14 +3,6 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Roboto } from "next/font/google";
 
-type Props = {};
-//tuy da co ham nhung co defaut nen may cai khac khong thay duoc va xa duoc
-function abc() {}
-interface NoiDung {
-  NoiDungChinh: String;
-  NoiDungPhu: String;
-}
-
 const HeaderTin = () => {
   return (
     <Box>
