@@ -36,47 +36,52 @@ const MyComponent1 = () => {
   const classes = useStyles();
 
   return (
-    <Box
-      sx={{
-        background: "linear-gradient(40deg, #EF2779 0.79%, #7834BE 79.29%)",
-      }}
-    >
-      <Box sx={{ marginLeft: "632.5px", paddingTop: "80px", color: "white" }}>
-        {noidung1.NoiDungChinh}
-      </Box>
+    <>
       <Box
         sx={{
-          marginLeft: "454.5px",
-          fontSize: "46px",
-          marginTop: "7px ",
-          color: "white",
+          background: "linear-gradient(40deg, #EF2779 0.79%, #7834BE 79.29%)",
         }}
       >
-        {noidung1.NoiDungPhu}
-      </Box>
-      <Box sx={{ marginLeft: "580.5px", marginTop: "69px", color: "white" }}>
-        {noidung2.NoiDungChinh}
-      </Box>
-      <Box sx={{ marginLeft: "577px", marginTop: "10px", color: "white" }}>
-        {noidung2.NoiDungPhu}
-      </Box>
-      <Box sx={{ marginLeft: "543.5px", marginTop: "30px" }}>
-        <UnstyledInputIntroduction></UnstyledInputIntroduction>
-      </Box>
-      <Box sx={{ marginLeft: "543.5px", marginTop: "24px" ,paddingBottom:"97px"}}>
-        <Button
+        <Box sx={{ textAlign: "center", paddingTop: "80px", color: "white" }}>
+          {noidung1.NoiDungChinh}
+        </Box>
+        <Box
           sx={{
-            borderRadius: "39px",
-            width: "305px",
-            height:"40px",
-            background: "var(--Primary, #EF2779)",
+            textAlign: "center",
+            fontSize: "46px",
+            marginTop: "7px ",
+            color: "white",
           }}
-          variant="contained"
         >
-          Subscribe
-        </Button>
+          {noidung1.NoiDungPhu}
+        </Box>
+        <Box sx={{ textAlign: "center", marginTop: "69px", color: "white" }}>
+          {noidung2.NoiDungChinh}
+        </Box>
+        <Box sx={{ textAlign: "center", marginTop: "10px", color: "white" }}>
+          {noidung2.NoiDungPhu}
+        </Box>
+        <Box sx={{ textAlign: "center", marginTop: "30px" }}>
+          <UnstyledInputIntroduction></UnstyledInputIntroduction>
+        </Box>
+        <Box
+          sx={{ textAlign: "center", marginTop: "24px", paddingBottom: "97px" }}
+        >
+          <Button
+            sx={{
+              borderRadius: "39px",
+              width: "305px",
+              height: "40px",
+              background: "var(--Primary, #EF2779)",
+            }}
+            variant="contained"
+          >
+            Subscribe
+          </Button>
+        </Box>
       </Box>
-    </Box>
+      <Box></Box>
+    </>
   );
 };
 
