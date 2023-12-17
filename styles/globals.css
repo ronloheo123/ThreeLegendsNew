@@ -6,3 +6,6 @@
 :root {
   --Background-Gradient: linear-gradient(40deg, #EF2779 0.79%, #7834BE 79.29%);
 }
+:root{
+  --New-Background-Gradient1: var(--Secondary, #38A3F1);
+}

@@ -5,7 +5,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles"; // Thay đổi đường dẫn tùy thuộc vào cấu trúc thư mục của bạn
 import Image from "next/image";
 import { title } from "process";
-
+import Button from "@mui/material/Button";
 const myimage: String[] = ["logo3", "logo2", "logo5"];
 const myimage1: String[] = ["logo5", "logo1", "logo4"];
 interface HinhAnh {
@@ -43,9 +43,7 @@ function ShowImages(props: { item: String[] }) {
       <Stack direction="row" justifyContent="center" spacing={"52px"}>
         {props.item.map((item, index) => (
           <Box key={index}>
-            <Box>
-              {proDuct1.head}
-            </Box>
+            <Box>{proDuct1.head}</Box>
             <Box marginTop={"20px"}>
               <Image
                 key={index}
@@ -55,7 +53,9 @@ function ShowImages(props: { item: String[] }) {
                 height={123}
               />
             </Box>
-            <Box width={"193px"} textAlign={"center"}>{proDuct1.content}</Box>
+            <Box width={"193px"} textAlign={"center"}>
+              {proDuct1.content}
+            </Box>
           </Box>
         ))}
       </Stack>
@@ -78,7 +78,20 @@ const Middle = () => {
             {<ShowImages item={myimage} />}
           </Box>
           <Box marginTop={"70px"} textAlign={"center"}>
-            {<ShowImages item={myimage1}/>}
+            {<ShowImages item={myimage1} />}
+          </Box>
+          <Box marginTop={"80px"} textAlign={"center"}>
+            <Button
+              sx={{
+                borderRadius: "39px",
+                width: "236px",
+                height: "40px",
+                background: "var(--Secondary, #38A3F1)",
+              }}
+              variant="contained"
+            >
+              Try For Free
+            </Button>
           </Box>
         </Box>
       </Container>
