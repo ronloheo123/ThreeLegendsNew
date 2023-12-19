@@ -3,8 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Box from "@mui/system/Box";
-import { MyComponent1 } from "@/components/truong";
-import { Middle } from "@/components/section2";
+import { MyComponent1 } from "@/components/Header";
+import { Middle } from "@/components/Middle";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Box>
           <MyComponent1></MyComponent1>
           <Middle></Middle>
+          <Footer></Footer>
         </Box>
       </main>
     </>
