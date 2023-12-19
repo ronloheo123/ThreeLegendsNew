@@ -32,7 +32,7 @@ const noidung2: NoiDung = {
   NoiDungPhu: "Available exclusively on Figmaland",
 };
 
-const MyComponent1 = () => {
+const Header1 = () => {
   const classes = useStyles();
 
   return (
@@ -85,4 +85,4 @@ const MyComponent1 = () => {
   );
 };
 
-export { MyComponent1 };
+export { Header1 };
