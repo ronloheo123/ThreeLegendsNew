@@ -1,4 +1,4 @@
-import { Box, Stack, TextField, Button, Grid } from '@mui/material'
+import { Box, Stack, TextField, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import Image from 'next/image'
 
@@ -8,7 +8,7 @@ const ContactRow = () => {
 
         <Grid container spacing={10}>
             <Grid item xs={7}>
-                <Box sx={{ backgroundColor: 'white', borderRadius: '8px' }}>
+                <Box sx={{ backgroundColor: 'white', borderRadius: '8px', pl:'200px',ml:'100px'}}>
                     <Box>
                         <TextField
                             id="Ten"
@@ -42,40 +42,49 @@ const ContactRow = () => {
             </Grid>
 
             <Grid item xs={5}>
-                <Box color={'white'}>
+                <Box>
                     <Image
                         src="/Icon/Mark.svg"
                         alt="mark"
                         width={26}
                         height={32}
                     />
-                    6386 Spring St undefined Anchorage,
-                    Georgia 12473 United States
+                    <Box color={'white'}>
+                        6386 Spring St undefined Anchorage,
+                        Georgia 12473 United States
+                    </Box>
                 </Box>
-                <Box color={'white'}>
+                <Box>
                     <Image
                         src="/Icon/Phone.svg"
                         alt="mark"
                         width={26}
                         height={32}
                     />
-                    (843) 555-0130
+                    <Box color={'white'}>
+                        (843) 555-0130
+
+                    </Box>
+
                 </Box>
-                <Box color={'white'}>
+                <Box>
                     <Image
                         src="/Icon/Mail.svg"
                         alt="mark"
                         width={27}
                         height={22}
                     />
-                    willie.jennings@example.com
+                    <Box color={'white'}>
+                        willie.jennings@example.com
+                    </Box>
+
                 </Box>
                 <Box>
                     <Image
                         src="/Icon/social media.svg"
                         alt="mark"
                         width={140}
-                        height={50}                       
+                        height={50}
                     />
                 </Box>
 
