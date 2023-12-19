@@ -34,10 +34,8 @@ const Bigphoto = () => {
         }}
       >
         <h1 style={{ fontSize: "55px" }}>We focus on ergonomics </h1>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
-        </p>
+        <p>Most calendars are designed for teams.</p>
+        <p>Slate is designed for freelancers</p>
         <Button
           variant="contained"
           color="primary"
@@ -46,7 +44,9 @@ const Bigphoto = () => {
             backgroundColor: "white",
             color: "#38A3F1",
             borderRadius: "30px",
-            padding: "19px 39px",
+            padding: "9px 29px",
+            marginTop: "50px",
+            fontWeight: "bold",
           }}
         >
           Try For Free

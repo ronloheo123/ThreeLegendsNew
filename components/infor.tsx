@@ -38,7 +38,7 @@ const Infor = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Typography sx={{ fontSize: 15 }} color="black" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="#374754" gutterBottom>
           Slate helps you see how many more days you need to work to reach your
           financial goal.{" "}
         </Typography>
@@ -65,7 +65,7 @@ const Infor = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Typography sx={{ fontSize: 15 }} color="black" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="#374754" gutterBottom>
           Slate helps you see how many more days you need to work to reach your
           financial goal.{" "}
         </Typography>
@@ -92,7 +92,7 @@ const Infor = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Typography sx={{ fontSize: 15 }} color="black" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="#374754" gutterBottom>
           Slate helps you see how many more days you need to work to reach your
           financial goal.{" "}
         </Typography>
