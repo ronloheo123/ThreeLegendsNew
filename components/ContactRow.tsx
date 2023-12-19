@@ -1,4 +1,4 @@
-import { Box, Stack, TextField, Button } from '@mui/material'
+import { Box, Stack, TextField, Button, Grid } from '@mui/material'
 import React from 'react'
 import Image from 'next/image'
 
@@ -6,8 +6,8 @@ import Image from 'next/image'
 const ContactRow = () => {
     return (
 
-        <Stack direction="row">
-            <Stack direction="column" >
+        <Grid container spacing={10}>
+            <Grid item xs={7}>
                 <Box sx={{ backgroundColor: 'white', borderRadius: '8px' }}>
                     <Box>
                         <TextField
@@ -39,18 +39,48 @@ const ContactRow = () => {
                         </Button>
                     </Box>
                 </Box>
-            </Stack>
-            <Stack>
-                <Image                    
-                    src={`/Icon/${}.svg`}
-                    alt=""
-                    width={122}
-                    height={123}
-                />
+            </Grid>
 
+            <Grid item xs={5}>
+                <Box color={'white'}>
+                    <Image
+                        src="/Icon/Mark.svg"
+                        alt="mark"
+                        width={26}
+                        height={32}
+                    />
+                    6386 Spring St undefined Anchorage,
+                    Georgia 12473 United States
+                </Box>
+                <Box color={'white'}>
+                    <Image
+                        src="/Icon/Phone.svg"
+                        alt="mark"
+                        width={26}
+                        height={32}
+                    />
+                    (843) 555-0130
+                </Box>
+                <Box color={'white'}>
+                    <Image
+                        src="/Icon/Mail.svg"
+                        alt="mark"
+                        width={27}
+                        height={22}
+                    />
+                    willie.jennings@example.com
+                </Box>
+                <Box>
+                    <Image
+                        src="/Icon/social media.svg"
+                        alt="mark"
+                        width={140}
+                        height={50}                       
+                    />
+                </Box>
 
-            </Stack>
-        </Stack>
+            </Grid>
+        </Grid>
     )
 }
 

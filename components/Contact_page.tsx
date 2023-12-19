@@ -4,7 +4,7 @@ import ContactContent from './ContactContent'
 
 const Contact = () => {
   return (
-    <Container sx={{backgroundColor:"#252B42", pt:"50px"}} >
+    <Container sx={{backgroundColor:"#252B42", pt:"50px",pb:"50px"}} >
       <ContactContent></ContactContent>
     </Container>
   )
