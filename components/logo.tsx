@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Roboto } from "next/font/google";
 
-const Head = () => {
+const Logo = () => {
   return (
     <Box>
       <Box
@@ -21,4 +21,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default Logo;

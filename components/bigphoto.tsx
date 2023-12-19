@@ -2,21 +2,26 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Roboto } from "next/font/google";
+import Image from "next/image";
 
 const Bigphoto = () => {
+  const imageStyle2 = {
+    zIndex: 4,
+    position: "relative", // Cần thêm position để sử dụng thuộc tính top
+    top: 150,
+  };
+
   return (
     <Box style={{ display: "flex" }}>
       {/* Box chứa hình ảnh */}
-      <Box
-        sx={{
-          backgroundImage: `url('/Tin/hinh3.png')`,
-          width: "900px",
-          height: "800px",
-          zIndex: 3,
-          position: "relative", // Cần thêm position để sử dụng thuộc tính top
-          top: 150,
-        }}
-      />
+      <Box sx={imageStyle2}>
+        <Image
+          src="/Tin/hinh3.png" // Đường dẫn đến hình ảnh của bạn
+          alt="laptop"
+          width={949.718}
+          height={788.702}
+        />
+      </Box>
 
       {/* Box chứa text */}
       <Box

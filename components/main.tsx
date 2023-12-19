@@ -6,6 +6,10 @@ import Background from "./background";
 import Head from "./head";
 import Logo from "./logo";
 import Bigphoto from "./bigphoto";
+import Feature from "./feature";
+import Infor from "./infor";
+import Feature2 from "./feature2";
+import Computer from "./computer";
 
 const All = () => {
   return (
@@ -15,7 +19,12 @@ const All = () => {
         <Head></Head>
         <Logo></Logo>
         <Bigphoto></Bigphoto>
+        <Feature></Feature>
+        <Infor></Infor>
+        <Feature2></Feature2>
+        <Computer></Computer>
       </Box>
+      <Box></Box>
     </Box>
   );
 };
