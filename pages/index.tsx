@@ -7,7 +7,6 @@ import { Header1 } from "@/components/Header1";
 import { Middle } from "@/components/Middle";
 import { Footer } from "@/components/Footer";
 import { MainMid } from "@/components/MainMid";
-
 import All from "@/components/main";
 
 const inter = Inter({ subsets: ["latin"] });
