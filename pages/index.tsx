@@ -10,6 +10,13 @@ import Contact from "@/components/Contact_page";
 import { Container } from "@mui/material";
 
 
+import { Header1 } from "@/components/Header1";
+import { Middle } from "@/components/Middle";
+import { Footer } from "@/components/Footer";
+import { MainMid } from "@/components/MainMid";
+
+import All from "@/components/main";
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -24,12 +31,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+  
+
+       <Box>
+          <All></All>
+        </Box>
+        <Box>
+         <MainMid></MainMid>
+        </Box>
         <Box>
           <Pricing_page></Pricing_page>          
         </Box>
         <Box sx={{pt:"100px",}}>
           <Contact></Contact>_
-        </Box>    
+        </Box>  
+
       </main>
     </>
   );
