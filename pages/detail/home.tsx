@@ -10,22 +10,20 @@ import Layout2 from "@/components/layout2";
 import Layout3 from "@/components/layout3";
 import Layout4 from "@/components/layout4";
 import Detail1 from "./detail1";
-const Detail: NextPageWithLayout = () => {
+const Home: NextPageWithLayout = () => {
   return (
     <>
-       <Box></Box>
+      <Box>Home</Box>
     </>
   );
 };
 
-Detail.getLayout = function getLayout(page: ReactElement) {
+Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <>
-      
-        <Layout>{page}</Layout>
-     
+      <Layout>{page}</Layout>
     </>
   );
 };
 
-export default Detail;
+export default Home;
